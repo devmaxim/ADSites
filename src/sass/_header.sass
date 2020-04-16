@@ -1,0 +1,120 @@
+.header
+	padding-top: 17px
+	position: relative
+	&-tel
+		&-media
+			display: none
+	&-section
+		background: #fff url('../img/header/header-section-bg.png') center / cover no-repeat
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100% 
+			height: 100% 
+			background-color: rgba(255,255,255,.9)  
+	&-block
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		-webkit-align-items: center
+		align-items: center
+	&-logo
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		a
+			margin-right: 37px
+		&__text
+			font-family: $mont-regular
+			font-size: 12px
+			line-height: 130%
+			color: #666666
+			margin: 0
+	&-social
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		&__text
+			font-family: $mont-regular
+			font-size: 12px
+			line-height: 15px
+			letter-spacing: 0.5px
+			color: #666666
+			margin-right: 20px
+		&__icon
+			width: 30px
+			height: 30px
+			margin-right: 10px
+			-webkit-transition: all .2s 
+			-moz-transition: all .2s 
+			-ms-transition: all .2s 
+			-o-transition: all .2s 
+			transition: all .2s 
+			&-1
+				background: url('../img/header/header-social-viber.svg') center / cover no-repeat
+				&:hover
+					background: url('../img/header/header-social-viber-active.svg') center / cover no-repeat
+			&-2
+				background: url('../img/header/header-social-telegram.svg') center / cover no-repeat
+				&:hover
+					background: url('../img/header/header-social-telegram-active.svg') center / cover no-repeat
+			&-3
+				background: url('../img/header/header-social-whatsapp.svg') center / cover no-repeat
+				&:hover
+					background: url('../img/header/header-social-whatsapp-active.svg') center / cover no-repeat
+	&-feedback
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: flex-start
+		align-items: flex-start
+		&__tel
+			font-family: $mont-semibold
+			font-size: 18px
+			line-height: 22px
+			letter-spacing: 0.5px
+			color: $text-color-active
+			margin-bottom: 7px
+		&__mail
+			display: flex
+			-webkit-justify-content: flex-start
+			justify-content: flex-start
+			-webkit-align-items: center
+			align-items: center
+			&-image
+				width: 16px
+				height: 16px
+				margin-right: 15px
+				background: url('../img/header/header-email.svg') center / cover no-repeat
+				-webkit-transition: all .2s 
+				-moz-transition: all .2s 
+				-ms-transition: all .2s 
+				-o-transition: all .2s 
+				transition: all .2s 
+				
+			&-text
+				font-family: $mont-regular
+				font-size: 12px
+				line-height: 15px
+				letter-spacing: 0.5px
+				color: #666666
+				-webkit-transition: all .2s 
+				-moz-transition: all .2s 
+				-ms-transition: all .2s 
+				-o-transition: all .2s 
+				transition: all .2s 
+					
+
+.header-feedback__mail:hover .header-feedback__mail-image
+	background: url('../img/header/header-email-active.svg') center / cover no-repeat
+.header-feedback__mail:hover .header-feedback__mail-text
+	color: #FFDB4C
+	

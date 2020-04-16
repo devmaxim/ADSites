@@ -1,0 +1,168 @@
+.download
+	padding: 120px 0
+	background-color: #F5F5F5
+	&-block
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: flex-start
+		align-items: flex-start
+		position: relative
+	&__title
+		margin-top: 0
+		margin-bottom: 30px
+		line-height: 140%
+		text-align: center
+	&-list
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-align-items: center
+		align-items: center
+		margin-bottom: 40px
+		&__item
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			margin-right: 20px
+			img
+				margin-right: 10px
+			span
+				font-family: $mont-regular
+				font-size: 16px
+				line-height: 20px
+				letter-spacing: 0.5px
+				color: $text-color
+	&-form
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		&__inputs
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+		input
+			font-family: $mont-regular
+			font-size: 12px
+			line-height: 15px
+			color: #888888
+			width: 210px
+			margin-right: 30px
+			border: 1px solid #888888
+			background-color: transparent
+			border-radius: 30px
+			padding: 20px 0 20px 60px
+			margin-bottom: 30px
+			&:focus
+				outline: none
+		&__button
+			-webkit-align-self: center
+			align-self: center
+			margin-right: 25px
+			padding: 20px 60px
+			font-size: 18px
+			line-height: 22px
+			letter-spacing: 0.5px
+		&__tel
+			&-block
+				position: relative
+			&-text
+				position: absolute
+				top: -8px
+				left: 30px
+				background-color: #F5F5F5 
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				padding-left: 10px
+				padding-right: 15px
+				img
+					margin-right: 10px
+				span
+					font-family: $mont-regular
+					font-size: 12px
+					line-height: 15px
+					color: $text-color 
+			
+		&__mail
+			&-block
+				position: relative
+			&-text
+				position: absolute
+				top: -8px
+				left: 30px
+				background-color: #F5F5F5 
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				padding-left: 10px
+				padding-right: 15px
+				img
+					margin-right: 10px
+				span
+					font-family: $mont-regular
+					font-size: 12px
+					line-height: 15px
+					color: $text-color 
+	&-image
+		&-block
+			position: absolute
+			right: 100px
+			top: 0
+		&-1
+			position: absolute
+			right: 100px
+			top: -15px
+			z-index: 0
+			max-width: unset 
+		&-2
+			position: absolute
+			top: 0
+			right: 0
+			z-index: 1
+			max-width: unset 
+		&-arrow
+			position: absolute
+			max-width: unset
+			top: 320px 
+			right: 400px
+			
+
+.download-form__tel-text-image
+	width: 14px
+	height: 14px
+	margin-right: 10px
+	background: transparent url('../img/download/download-form-tel-icon.svg') center no-repeat
+			
+.download-form__mail-text-image
+	width: 14px
+	height: 14px
+	margin-right: 10px
+	background: transparent url('../img/download/download-form-mail-icon.svg') center no-repeat
+			
+.download-form__tel-block:hover .download-form__tel
+	border: 1px solid $text-color-active 
+	color: $text-color-active
+.download-form__tel-block:hover .download-form__tel-text-image
+	background: transparent url('../img/download/download-form-tel-icon-active.svg') center no-repeat
+	
+.download-form__tel-block:hover .download-form__tel-text-sub
+	color: $text-color-active 			
+.download-form__tel:focus
+	border: 1px solid $text-color-active 
+	color: $text-color-active	
+			
+.download-form__mail-block:hover .download-form__mail
+	border: 1px solid $text-color-active 
+	color: $text-color-active
+.download-form__mail-block:hover .download-form__mail-text-image
+	background: transparent url('../img/download/download-form-mail-icon-active.svg') center no-repeat
+	
+.download-form__mail-block:hover .download-form__mail-text-sub
+	color: $text-color-active 			
+.download-form__mail:focus
+	border: 1px solid $text-color-active 
+	color: $text-color-active

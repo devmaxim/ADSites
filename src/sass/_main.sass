@@ -1,0 +1,67 @@
+.main
+	padding-top: 110px
+	padding-bottom: 150px
+	position: relative
+	&-block
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		position: relative
+	&__title
+		color: #000000
+		margin-bottom: 30px
+		margin-top: 0
+	&__subtitle
+		font-family: $mont-regular
+		font-size: 20px
+		line-height: 130%
+		letter-spacing: 1.25px
+		color: $text-color  
+		position: relative
+		display: block
+		padding-left: 115px
+		margin-bottom: 50px
+		&::before
+			content: "" 
+			position: absolute
+			height: 3px
+			width: 90px
+			left: 0
+			top: 50%
+			margin-top: -1.5px
+			background-color: #0225C1
+			box-shadow: 0px 0px 4px rgba(2, 37, 193, 0.8)
+			border-radius: 5px
+	&__button
+		padding: 22px 56px
+		margin-bottom: 65px
+		font-size: 18px
+		letter-spacing: 0.5px
+		line-height: 22px
+	&-items
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+	&__item
+		display: flex
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+		margin-right: 80px
+		&-3
+			margin-right: 0
+		&-image
+			margin-right: 30px
+		&-text
+			font-family: $mont-regular
+			color: $text-color
+			letter-spacing: 0.5px
+			line-height: 130%
+			font-size: 16px
+	&__image
+		position: absolute
+		top: 0
+		right: -15px

@@ -1,0 +1,107 @@
+.approach
+	padding: 120px 0 160px 0
+	background-color: #F5F5F5 
+	&__title
+		text-align: center
+		margin-top: 0
+		margin-bottom: 20px
+	&__subtitle
+		text-align: center
+		margin-bottom: 60px
+		font-family: $mont-regular
+		font-size: 24px
+		line-height: 130%
+		letter-spacing: 1.25px
+		color: $text-color  
+	&-slider
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		&-item
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			background-color: #FFFFFF
+			box-shadow: 0px 4px 10px #E5E5E5
+			border-radius: 10px
+			padding: 30px 0 0 30px
+			width: 340px 
+			margin-right: 30px
+			min-height: 430px 
+			overflow: hidden 
+			&:focus
+				outline: none 
+		&-arrow
+			&-next
+				cursor: pointer
+				width: 60px
+				height: 60px
+				position: absolute
+				right: -30px
+				top: 50%
+				margin-top: -30px
+				transition: all .3s
+				border-radius: 50% 
+				background: #94A2E0  url('../img/approach/approach-slider-arrow-next.svg') center no-repeat
+				&:hover
+					background-color: #0225C1 
+			&-prev
+				cursor: pointer
+				width: 60px
+				height: 60px
+				position: absolute
+				left: -30px
+				top: 50%
+				margin-top: -30px
+				transition: all .3s
+				z-index: 2
+				border-radius: 50% 
+				background: #94A2E0  url('../img/approach/approach-slider-arrow-prev.svg') center no-repeat
+				&:hover
+					background-color: #0225C1 
+	&-item
+		&__letter
+			font-family: $mont-semibold
+			font-size: 24px
+			line-height: 29px
+			letter-spacing: 0.5px
+			color: #0225C1  
+			margin-bottom: 20px
+			display: block
+		&__list
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			margin-bottom: 30px
+			&-text
+				display: block
+				margin-bottom: 10px
+				font-family: $mont-regular
+				font-size: 14px
+				line-height: 17px
+				letter-spacing: 0.5px
+				color: #000  
+				
+.slick-dots
+	margin-bottom: -65px
+	left: 0
+.slick-dots>li>button::before
+	background-color: transparent
+	border: 2px solid #888888
+	border-radius: 50%  
+	content: "" 
+.slick-dots>li
+	margin-right: 20px
+.slick-dots>li.slick-active
+		background-color: #0225C1
+		padding: 2px
+		border-radius: 50% 
+		border: none
+.slick-dots>li.slick-active>button::before
+	border: 2px solid #0225C1
+				

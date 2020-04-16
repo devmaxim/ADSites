@@ -1,0 +1,115 @@
+.example
+	padding: 120px 0
+	&__title
+		width: 700px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		margin-top: 0
+		margin-bottom: 60px
+	&-cases
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		&-opened
+			display: flex
+			-webkit-justify-content: space-around
+			justify-content: space-around
+			-webkit-flex-wrap: wrap 
+			-ms-flex-wrap: wrap 
+			flex-wrap: wrap 
+			width: 100% 
+	&-case
+		-webkit-border-radius: 10px
+		border-radius: 10px
+		margin-bottom: 30px
+		box-shadow: 0px 4px 10px #ADADAD
+		position: relative
+		&-image
+			width: 100% 
+			height: 100%
+	&-button
+		margin-top: 30px
+		font-family: $mont-medium
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		letter-spacing: 0.5px
+		color: $text-color-active
+		border: 1px solid $text-color-active
+		background-color: transparent
+		padding: 20px 60px
+		-webkit-border-radius: 30px
+		border-radius: 30px  
+		cursor: pointer
+		transition: all .3s 
+		&:hover
+			color: #FFF
+			background-color: $text-color-active 
+	&-button
+		&-close
+			margin-top: 30px
+			font-family: $mont-medium
+			font-size: 18px
+			line-height: 22px
+			text-align: center
+			letter-spacing: 0.5px
+			color: $text-color-active
+			border: 1px solid $text-color-active
+			background-color: transparent
+			padding: 20px 60px
+			-webkit-border-radius: 30px
+			border-radius: 30px  
+			cursor: pointer
+			transition: all .3s 
+			&:hover
+				color: #FFF
+				background-color: $text-color-active  
+
+
+.example>.container
+	display: flex
+	flex-direction: column
+	align-items: center
+
+
+.example-case-hover
+	width: 100% 
+	height: 100% 
+	position: absolute
+	top: 0
+	left: 0
+	opacity: 0
+	transition: all .5s
+	background-color: rgba(51, 51, 51, 0.9)
+	border-radius: 10px
+	span
+		display: block
+		margin-top: 60px
+		text-align: center
+		margin-bottom: 30px
+		font-family: $mont-medium
+		font-size: 24px
+		line-height: 130%
+		letter-spacing: 0.5px
+		color: #fff
+	a
+		text-align: center
+		display: block
+		font-family: $mont-semibold
+		font-size: 24px
+		line-height: 130%
+		letter-spacing: 1.25px
+		text-decoration: underline 
+		text-transform: uppercase
+		color: $text-color-active 
+		
+.example-case:hover .example-case-hover
+	opacity: 1
+	transition: all 1s

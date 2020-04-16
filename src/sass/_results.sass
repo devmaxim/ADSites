@@ -1,0 +1,182 @@
+.results
+	padding: 120px 0
+	background-color: #F5F5F5 
+	&__title
+		margin-left: auto
+		margin-right: auto
+		line-height: 140%
+		width: 750px
+		text-align: center
+		margin-top: 0
+		margin-bottom: 60px
+	&-case
+		background: #FFFFFF
+		box-shadow: 0px 4px 10px #ADADAD
+		border-radius: 10px
+		display: flex
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		margin-bottom: 50px
+		&s
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+		&__image
+			width: 100%
+			height: 100% 
+		&__text
+			padding: 50px 0 50px 70px
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+		&__title
+			font-family: $mont-medium
+			font-size: 24px
+			line-height: 140%
+			letter-spacing: 1.25px
+			color: $text-color
+			margin-top: 0
+			margin-bottom: 30px
+		&__item
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-align-items: center
+			align-items: center
+			margin-right: 40px
+			&s
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				margin-bottom: 30px
+			&-title
+				font-family: $mont-regular
+				font-size: 12px
+				line-height: 140%
+				letter-spacing: 0.5px
+				color: $text-color
+				display: block
+				margin-bottom: 30px
+			&-desc
+				font-family: $mont-semibold
+				font-size: 40px
+				line-height: 49px
+				letter-spacing: 1.25px
+				color: $text-color-active
+				span
+					font-size: 18px
+					line-height: 22px
+					letter-spacing: 0.5px
+		&__list
+			&-title
+				display: block
+				margin-bottom: 20px
+				font-family: $mont-regular
+				font-size: 18px
+				line-height: 22px
+				letter-spacing: 0.5px
+				color: $text-color
+			&-item
+				display: block
+				margin-bottom: 10px
+				font-family: $mont-regular
+				font-size: 16px
+				line-height: 20px
+				letter-spacing: 0.5px
+				color: $text-color
+				position: relative
+				padding-left: 40px
+				&::before
+					content: ''
+					position: absolute 
+					left: 0
+					top: 50%
+					-webkit-transform: translateY(-50%)
+					-moz-transform: translateY(-50%)
+					-ms-transform: translateY(-50%)
+					-o-transform: translateY(-50%)
+					transform: translateY(-50%)
+					width: 20px
+					height: 20px
+					background: url('../img/results/result-list-check.svg') center no-repeat
+		&__link
+			-webkit-align-self: center
+			align-self: center
+			margin-right: 100px
+			margin-top: 50px
+			font-family: $mont-medium
+			font-size: 16px
+			line-height: 20px
+			letter-spacing: 0.5px
+			color: $text-color 
+			position: relative
+			padding-bottom: 10px
+			&::before,
+			&::after
+				content: ''
+				height: 2px
+				width: 51%
+				position: absolute
+				bottom: 0
+				background-color: #0225C1
+				transition: all 1s 
+			&::before
+				left: 0
+			&::after
+				right: 0
+	&__button-open-list
+		font-family: $mont-medium
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		letter-spacing: 0.5px
+		color: $text-color-active
+		border: 1px solid $text-color-active
+		background-color: transparent
+		padding: 20px 60px
+		-webkit-border-radius: 30px
+		border-radius: 30px  
+		cursor: pointer
+		transition: all .3s 
+		&:hover
+			color: #FFF
+			background-color: $text-color-active  
+	&__button-close-list
+		font-family: $mont-medium
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		letter-spacing: 0.5px
+		color: $text-color-active
+		border: 1px solid $text-color-active
+		background-color: transparent
+		padding: 20px 60px
+		-webkit-border-radius: 30px
+		border-radius: 30px  
+		cursor: pointer
+		transition: all .3s 
+		display: none
+		&:hover
+			color: #FFF
+			background-color: $text-color-active  
+			
+.results-case__link:hover:before
+	width: 0
+	transition: all .5s
+	background-color: $text-color-active
+.results-case__link:hover:after
+	width: 0
+	transition: all .5s
+	background-color: $text-color-active

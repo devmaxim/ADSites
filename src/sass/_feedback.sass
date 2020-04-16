@@ -1,0 +1,257 @@
+.feedback
+	padding: 120px 0
+	background-color: #F5F5F5 
+	z-index: 0
+	position: relative
+	&-block
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: center
+		align-items: center
+		-webkit-justify-content: center
+		justify-content: center
+	&__title
+		margin-top: 0
+		margin-bottom: 50px
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		width: 1000px
+	&-form
+		padding: 60px 100px
+		box-shadow: 0px 4px 40px rgba(173, 173, 173, 0.6)
+		border-radius: 10px
+		background-color: #FFF 
+		-webkit-align-self: flex-end
+		align-self: flex-end
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: center
+		align-items: center
+		max-width: 600px
+		position: relative
+		&__row
+			&-1
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				-webkit-justify-content: space-between
+				justify-content: space-between
+			&-2
+				display: flex
+				margin-top: 30px
+				
+		&-choise
+			display: flex
+			-webkit-align-items: center
+			align-items: center
+			position: absolute
+			top: -8px
+			left: 20px
+			background-color: #fff
+			padding-left: 10px
+			padding-right: 15px
+			img
+				margin-right: 10px
+			span
+				font-family: $mont-regular
+				font-size: 12px
+				line-height: 15px
+				color: $text-color  
+				
+		&__tel
+			border: 1px solid #C4C4C4
+			&-block
+				position: relative
+			&-text
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				position: absolute
+				top: -8px
+				left: 20px
+				background-color: #fff
+				padding-left: 10px
+				padding-right: 15px
+				img
+					margin-right: 10px
+				span
+					font-family: $mont-regular
+					font-size: 12px
+					line-height: 15px
+					color: $text-color 
+		&__job
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			margin-right: 40px
+			position: relative
+			&-input
+				margin-top: 10px
+				border: 1px solid #C4C4C4
+			&-text
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				position: absolute
+				top: 0px
+				left: 20px
+				background-color: #fff
+				padding-left: 10px
+				padding-right: 15px
+				img
+					margin-right: 10px
+				span
+					font-family: $mont-regular
+					font-size: 12px
+					line-height: 15px
+					color: $text-color  
+		&__city
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			position: relative
+			&-input
+				margin-top: 10px
+				border: 1px solid #C4C4C4
+			&-text
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				position: absolute
+				top: 0px
+				left: 20px
+				background-color: #fff
+				padding-left: 10px
+				padding-right: 15px
+				img
+					margin-right: 10px
+				span
+					font-family: $mont-regular
+					font-size: 12px
+					line-height: 15px
+					color: $text-color  
+		&__social
+			position: relative
+			width: 342px
+			&-radio
+				width: 0px
+				opacity: 0
+			&-1
+				&-label
+					background: url('../img/feedback/feedback-form-social-viber.svg') center no-repeat
+					width: 30px
+					height: 30px
+					position: absolute
+					cursor: pointer
+					top: 25px
+					left: 80px
+					&_active
+						background: url('../img/feedback/feedback-form-social-viber-active.svg') center no-repeat
+			&-2
+				&-label
+					background: url('../img/feedback/feedback-form-social-telegram.svg') center no-repeat
+					width: 30px
+					height: 30px
+					position: absolute
+					cursor: pointer
+					top: 25px
+					left: 125px
+					&_active
+						background: url('../img/feedback/feedback-form-social-telegram-active.svg') center no-repeat
+			&-3
+				&-label
+					background: url('../img/feedback/feedback-form-social-whatsapp.svg') center no-repeat
+					width: 30px
+					height: 30px
+					position: absolute
+					cursor: pointer
+					top: 25px
+					left: 170px
+					&_active
+						background: url('../img/feedback/feedback-form-social-whatsapp-active.svg') center no-repeat
+		&__button
+			font-size: 18px
+			line-height: 22px
+			letter-spacing: 0.5px
+			padding: 20px 0
+			width: 302px
+			margin-top: 30px
+		&-image
+			position: absolute
+			bottom: -70px
+			left: -400px
+			z-index: -2
+		&__small
+			&-text
+				margin-top: 20px
+				display: block
+				font-family: $mont-regular
+				font-size: 12px
+				line-height: 15px
+				text-align: center
+				color: #888888  
+		
+.feedback-form__job-text-image 
+	width: 14px
+	height: 14px
+	margin-right: 10px
+	background: transparent url('../img/feedback/feedback-form-icon-1.svg') center no-repeat
+
+.feedback-form__job:hover .feedback-form__job-input
+	border: 1px solid $text-color-active
+.feedback-form__job:hover .feedback-form__job-text>span
+	color: $text-color-active 
+.feedback-form__job:hover .feedback-form__job-text-image 
+	background: transparent url('../img/feedback/feedback-form-icon-1-active.svg') center no-repeat
+.feedback-form__job-input:focus 
+	border: 1px solid $text-color-active
+	color: $text-color-active	
+		
+.feedback-form__city-text-image 
+	width: 14px
+	height: 14px
+	margin-right: 10px
+	background: transparent url('../img/feedback/feedback-form-icon-2.svg') center no-repeat
+
+.feedback-form__city:hover .feedback-form__city-input
+	border: 1px solid $text-color-active
+.feedback-form__city:hover .feedback-form__city-text>span
+	color: $text-color-active 
+.feedback-form__city:hover .feedback-form__city-text-image 
+	background: transparent url('../img/feedback/feedback-form-icon-2-active.svg') center no-repeat
+.feedback-form__city-input:focus 
+	border: 1px solid $text-color-active
+	color: $text-color-active	
+		
+.feedback-form__tel-text-image 
+	width: 14px
+	height: 14px
+	margin-right: 10px
+	background: transparent url('../img/feedback/feedback-form-icon-4.svg') center no-repeat
+
+.feedback-form__tel-block:hover .feedback-form__tel
+	border: 1px solid $text-color-active
+.feedback-form__tel-block:hover .feedback-form__tel-text>span
+	color: $text-color-active 
+.feedback-form__tel-block:hover .feedback-form__tel-text-image 
+	background: transparent url('../img/feedback/feedback-form-icon-4-active.svg') center no-repeat
+.feedback-form__tel:focus 
+	border: 1px solid $text-color-active
+	color: $text-color-active
+	
+.feedback-form__social-text-image 
+	width: 14px
+	height: 14px
+	margin-right: 10px
+	background: transparent url('../img/feedback/feedback-form-icon-3.svg') center no-repeat
+.feedback-form__social:hover .feedback-form__social-text-image 
+	background: transparent url('../img/feedback/feedback-form-icon-3-active.svg') center no-repeat	
+.feedback-form__social:hover .feedback-form-choise>span
+	color: $text-color-active 

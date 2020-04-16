@@ -1,0 +1,167 @@
+.modal
+	position: fixed
+	display: block
+	left: 50%
+	top: 50%
+	-webkit-transform: translate(-50%, -50%)
+	-moz-transform: translate(-50%, -50%)
+	-ms-transform: translate(-50%, -50%)
+	-o-transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%)
+	background-color: #FFFFFF
+	box-shadow: 0px 4px 30px rgba(173, 173, 173, 0.4)
+	border-radius: 30px
+	padding: 80px 60px 65px 60px
+	min-width: 650px 
+	&__close
+		position: absolute
+		top: -60px
+		right: -20px
+		font-size: 40px
+		font-family: $mont-medium
+		color: $text-color-active
+		cursor: pointer  
+	&-block
+		position: fixed
+		top: 0
+		left: 0
+		width: 100% 
+		height: 100% 
+		background-color: rgba(0,0,0,.5) 
+		display: none
+	&__title
+		text-align: center
+		font-family: $mont-semibold
+		font-size: 36px
+		line-height: 130%
+		letter-spacing: 1.25px
+		color: $text-color
+		margin-bottom: 60px
+		margin-top: 0
+	&-form
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-align-items: center
+		align-items: center
+		position: relative
+	&__form
+		&-title
+			font-family: $mont-medium
+			font-size: 24px
+			line-height: 29px
+			color: $text-color
+			margin-bottom: 20px
+			-webkit-align-self: flex-end
+			align-self: flex-end
+		&-subtitle
+			font-family: $mont-italic
+			font-size: 18px
+			line-height: 22px
+			color: $text-color
+			margin-bottom: 30px 
+			-webkit-align-self: flex-end
+			align-self: flex-end
+		&-tel
+			-webkit-align-self: flex-end
+			align-self: flex-end
+			position: relative
+			&-input
+				text-align: center
+				padding-left: 0
+				width: 270px
+				margin-bottom: 17px
+			&-text
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				position: absolute
+				top: -7px
+				left: 40px
+				background-color: #FFF 
+				padding: 0 15px
+				&-image
+					background: transparent url('../img/download/download-form-tel-icon.svg') center no-repeat
+					margin-right: 10px
+					width: 14px
+					height: 14px
+				span
+					font-family: $mont-regular
+					font-size: 12px
+					line-height: 15px
+					color: $text-color 
+		&-mail
+			-webkit-align-self: flex-end
+			align-self: flex-end
+			position: relative
+			margin-bottom: 10px
+			&-input
+				text-align: center
+				padding-left: 0
+				width: 270px
+				margin-bottom: 17px
+			&-text
+				display: flex
+				-webkit-align-items: center
+				align-items: center
+				position: absolute
+				top: -7px
+				left: 70px
+				background-color: #FFF 
+				padding: 0 15px
+				&-image
+					background: transparent url('../img/download/download-form-mail-icon.svg') center no-repeat
+					margin-right: 10px
+					width: 14px
+					height: 14px
+				span
+					font-family: $mont-regular
+					font-size: 12px
+					line-height: 15px
+					color: $text-color 
+	&__button
+		width: 270px
+		-webkit-align-self: flex-end
+		align-self: flex-end
+		padding: 19px 0
+		font-size: 18px
+		line-height: 22px
+		letter-spacing: 0.5px
+	&__image
+		position: absolute
+		bottom: -30px
+		left: -150px
+	&__text
+		font-family: $mont-italic
+		font-size: 12px
+		line-height: 130%
+		text-align: center
+		color: $text-color 
+		padding: 15px 20px 15px 45px
+		position: relative
+		&:before
+			content: "" 
+			background: transparent url('../img/results/result-list-check.svg') center no-repeat
+			width: 16px
+			height: 16px
+			position: absolute
+			left: 15px
+			top: 50%
+			margin-top: -8px
+		&-block
+			background-color: #FFFFFF
+			box-shadow: 0px 4px 30px rgba(173, 173, 173, 0.4)
+			border-radius: 100px
+			position: absolute
+			bottom: 0
+			left: 50px
+.modal__title>.text-active
+	text-transform: uppercase
+.modal_active
+	display: block
+	-webkit-transition: all .3s 
+	-moz-transition: all .3s 
+	-ms-transition: all .3s 
+	-o-transition: all .3s 
+	transition: all .3s 

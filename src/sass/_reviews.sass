@@ -1,0 +1,109 @@
+.reviews
+	padding: 120px 0
+	&__title
+		text-align: center
+		margin-top: 0
+		margin-bottom: 100px
+		line-height: 140%
+		color: #000 
+	&-case
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		box-shadow: 0px 4px 10px #ADADAD
+		border-radius: 10px
+		position: relative
+		margin-bottom: 50px
+		margin-right: 20px
+		&s
+			display: flex
+			-webkit-flex-direction: row
+			-ms-flex-direction: row
+			flex-direction: row
+			-webkit-flex-wrap: wrap
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+			-webkit-align-items: center
+			align-items: center
+			-webkit-justify-content: center
+			justify-content: center
+		&_hidden
+			-webkit-flex-basis: 100%
+			flex-basis: 100%
+			display: flex
+			-webkit-justify-content: center
+			justify-content: center
+		&__image
+			height: 100%
+			-webkit-border-radius: 0 10px 10px 0
+			border-radius: 0 10px 10px 0 
+		&__title
+			font-family: $mont-medium
+			font-size: 24px
+			line-height: 140%
+			letter-spacing: 0.5px
+			color: #0225C1
+			display: block
+			margin-bottom: 10px
+		&__subtitle
+			font-family: $mont-regular
+			font-size: 14px
+			line-height: 140%
+			letter-spacing: 0.5px
+			color: $text-color
+			display: block
+			margin-bottom: 20px
+		&__desc
+			font-family: $mont-italic
+			font-size: 16px
+			line-height: 140%
+			letter-spacing: 0.5px
+			color: $text-color
+		&__content
+			padding: 50px 25px 40px 30px
+	&__button-case-open
+		font-family: $mont-medium
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		letter-spacing: 0.5px
+		color: $text-color-active
+		border: 1px solid $text-color-active
+		background-color: #FFF
+		padding: 20px 60px
+		-webkit-border-radius: 30px
+		border-radius: 30px  
+		cursor: pointer
+		-webkit-transition: all .3s 
+		-moz-transition: all .3s 
+		-ms-transition: all .3s 
+		-o-transition: all .3s 
+		transition: all .3s 
+		margin-left: auto
+		margin-right: auto
+		&:hover
+			color: #FFF
+			background-color: $text-color-active  
+	&__button-case-close
+		font-family: $mont-medium
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		letter-spacing: 0.5px
+		color: $text-color-active
+		border: 1px solid $text-color-active
+		background-color: #FFF
+		padding: 20px 60px
+		-webkit-border-radius: 30px
+		border-radius: 30px  
+		cursor: pointer
+		-webkit-transition: all .3s 
+		-moz-transition: all .3s 
+		-ms-transition: all .3s 
+		-o-transition: all .3s 
+		transition: all .3s 
+		margin-left: auto
+		margin-right: auto
+		&:hover
+			color: #FFF
+			background-color: $text-color-active  
